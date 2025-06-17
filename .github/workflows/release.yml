@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 0
 
       # we'll need this for both 'zig build' and 'cargo zigbuild'
-      - uses: mlugg/setup-zig@v1
+      - uses: mlugg/setup-zig@v2
 
       # only needed if using signing
       - uses: sigstore/cosign-installer@v3.7.0
