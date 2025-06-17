@@ -25,7 +25,7 @@ A simple, fast, and configurable CLI tool designed to test API endpoints across 
 If you have Rust and Cargo installed, you can build and install `url_tester` directly from its source code:
 
 ```bash
-git clone [https://github.com/yongenaelf/url_tester.git](https://github.com/yongenaelf/url_tester.git)
+git clone https://github.com/yongenaelf/url_tester.git
 cd url_tester
 cargo install --path .
 ```
