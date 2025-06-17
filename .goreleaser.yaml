@@ -65,23 +65,5 @@ nfpms:
       - apk
       - rpm
 
-signs:
-  - cmd: cosign
-    certificate: "${artifact}.pem"
-    artifacts: checksum
-    args:
-      - sign-blob
-      - "--output-certificate=${certificate}"
-      - "--output-signature=${signature}"
-      - "${artifact}"
-      - "--yes"
-
-sboms:
-  - artifacts: archive
-
-brews:
-  - repository:
-      owner: "{{ .Env.GH_OWNER }}"
-      name: "{{ .Env.GH_REPO }}"
-      token: "{{ .Env.GH_PAT }}"
-    directory: Formula
+homebrew_casks:
+  - name: "{{ .Env.GH_REPO }}"

@@ -25,10 +25,10 @@ jobs:
       - uses: mlugg/setup-zig@v2
 
       # only needed if using signing
-      - uses: sigstore/cosign-installer@v3.7.0
+      # - uses: sigstore/cosign-installer@v3.7.0
 
       # only needed if using SBOMs
-      - uses: anchore/sbom-action/download-syft@v0.17.9
+      # - uses: anchore/sbom-action/download-syft@v0.17.9
 
       # only needed if using docker
       # - uses: docker/setup-qemu-action@v3
