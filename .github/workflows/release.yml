@@ -23,10 +23,6 @@ jobs:
 
       - uses: mlugg/setup-zig@v2
 
-      - run: |
-          sudo apt-get update
-          sudo apt-get install pkg-config
-
       - uses: goreleaser/goreleaser-action@v6
         with:
           # either 'goreleaser' (default) or 'goreleaser-pro'
