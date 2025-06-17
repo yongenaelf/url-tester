@@ -58,12 +58,5 @@ release:
 universal_binaries:
   - replace: true
 
-nfpms:
-  - file_name_template: "{{ .ConventionalFileName }}" # optional, better file names
-    formats:
-      - deb
-      - apk
-      - rpm
-
 homebrew_casks:
   - name: "{{ .Env.GH_REPO }}"
