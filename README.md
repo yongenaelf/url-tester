@@ -117,11 +117,3 @@ The console output provides a concise summary of the total test duration, follow
 ### CSV Output
 
 When you use the `--output` option, a CSV file will be generated. This file includes comprehensive details for every test, such as the environment name, the full URL, the HTTP status code, a preview of the response body, the pass/fail status, any associated error messages, the test duration, and the extracted `State` parameter from the URL.
-
------
-
-## 📄 License
-
-This project is licensed under the [MIT License](https://www.google.com/search?q=LICENSE).
-
------
