@@ -20,6 +20,18 @@ A simple, fast, and configurable CLI tool designed to test API endpoints across 
 
 ## 📦 Installation
 
+### Pre-built Binaries
+
+Pre-built binaries for `url_tester` are available for various platforms. You can download the latest release from the [GitHub Releases page](./releases).
+
+#### MacOS/Linux (Homebrew)
+
+If you use Homebrew, you can install `url_tester` easily:
+
+```bash
+brew install yongenaelf/url-tester/url_tester
+```
+
 ### From Source (Requires Rust)
 
 If you have Rust and Cargo installed, you can build and install `url_tester` directly from its source code:
