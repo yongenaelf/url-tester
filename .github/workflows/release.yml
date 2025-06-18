@@ -21,12 +21,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: mlugg/setup-zig@v2
-        with:
-          # The version of Zig to use, e.g. "0.15.0".
-          # If not specified, the latest stable version will be used.
-          version: "0.15.0"
-
       - uses: goreleaser/goreleaser-action@v6
         with:
           # either 'goreleaser' (default) or 'goreleaser-pro'
