@@ -18,3 +18,6 @@ publish-jobs = ["homebrew"]
 
 [dist.github-custom-runners]
 global = "ubuntu-latest"
+aarch64-unknown-linux-gnu = "ubuntu-latest"
+x86_64-unknown-linux-gnu = "ubuntu-latest"
+x86_64-pc-windows-msvc = "windows-latest"
