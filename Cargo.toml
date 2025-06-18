@@ -1,7 +1,13 @@
 [package]
 name = "url_tester"
 version = "0.1.0"
-edition = "2021"
+license = 'MIT OR Apache-2.0'
+description = "A CLI tool to test URLs with configurable options"
+readme = "README.md"
+homepage = "https://github.com/yongenaelf/url-tester"
+repository = "https://github.com/yongenaelf/url-tester"
+keywords = ["cli", "url", "tester", "http", "https"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 clap = { version = "4.5.4", features = ["derive"] }
