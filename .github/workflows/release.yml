@@ -301,7 +301,6 @@ jobs:
           pattern: artifacts-*
           path: Formula/
           merge-multiple: true
-          ref: ${{ github.ref_name }}
       # This is extra complex because you can make your Formula name not match your app name
       # so we need to find releases with a *.rb file, and publish with that filename.
       - name: Commit formula files
@@ -319,6 +318,8 @@ jobs:
             # We avoid reformatting user-provided data such as the app description and homepage.
             brew style --except-cops FormulaAudit/Homepage,FormulaAudit/Desc,FormulaAuditStrict --fix "Formula/${filename}" || true
 
+            git fetch -p
+            git switch main
             git add "Formula/${filename}"
             git commit -m "${name} ${version}"
           done
